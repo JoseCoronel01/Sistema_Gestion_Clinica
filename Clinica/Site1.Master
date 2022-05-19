@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Clinica.Site1" %>
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Clinica</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .UpperCase {
+            text-transform: uppercase;
+        }
+        .Horizontal {
+            display: flex;
+        }
+        .Margen {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="sm1" runat="server"></asp:ScriptManager>
+        <div class="container">
+            <div class="row p-lg-5">
+                <div class="col-md-12">
+                    <div class="Horizontal">
+                        <div class="Margen">
+                            <a href="/Menu.aspx">Inicio</a>
+                        </div>
+                        <div class="Margen">
+                            <a href="/Pages/Pacientes.aspx">Pacientes</a>
+                        </div>
+                        <div class="Margen">
+                            <a href="/Pages/NotasEvolucion.aspx">Notas de evolución</a>
+                        </div>
+                        <div class="Margen">
+                            <a href="/Pages/Colaboradores.aspx">Colaboradores</a>
+                        </div>
+                        <div class="Margen" style="margin-left: 50%;">
+                            <asp:Button ID="btnSalir" runat="server" Text="Salir" OnClick="btnSalir_Click" CssClass="btn btn-danger" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12">
+        <asp:UpdatePanel ID="up1" runat="server">
+            <ContentTemplate>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-3.6.0.min.js"></script>
+</body>
+</html>
