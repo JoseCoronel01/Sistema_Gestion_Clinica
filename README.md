@@ -1,0 +1,7 @@
+# Sistema_Gestion_Clinica
+Sistema de Gestion de Clinica
+.NET FRAMEWORK 4.8
+VISUAL STUDIO 2019
+SQL SERVER 2019 18.11.1
+ASP.NET C#
+EXCEL PACKAGE (REPORTES EXCEL)
