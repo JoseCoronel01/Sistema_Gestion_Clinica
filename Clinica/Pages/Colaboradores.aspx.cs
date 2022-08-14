@@ -7,7 +7,6 @@ using System.Web.UI.WebControls;
 using Clinica.Code;
 using Clinica.Datos;
 using System.Data;
-using PCL_Comun.Utilidades;
 using System.Configuration;
 using System.Web.Services;
 

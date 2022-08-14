@@ -8,7 +8,6 @@ using System.Web.UI.WebControls;
 using Clinica.Code;
 using System.Data;
 using Clinica.Datos;
-using PCL_Comun.Utilidades;
 using System.Configuration;
 
 namespace Clinica.Pages
@@ -222,7 +221,7 @@ namespace Clinica.Pages
             txtResponsableG.Value = "";
             txtLugarResidenciaG.Value = "";
             sEstatus.Value = "0";
-            sTipo.SelectedValue = "0";
+            sTipo.SelectedIndex = 0;
             txtPaternoG.Focus();
         }
         #endregion
