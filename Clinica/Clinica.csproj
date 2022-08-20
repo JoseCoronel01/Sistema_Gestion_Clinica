@@ -78,6 +78,8 @@
     <Content Include="Pages\Pacientes.aspx" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.6.0.min.js" />
+    <Content Include="UtilDevsLibrerias\ExcelPackage.dll" />
+    <Content Include="UtilDevsLibrerias\README.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
